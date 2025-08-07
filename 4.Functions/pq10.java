@@ -1,7 +1,9 @@
 //Write a function to find if a number is a palindrome or not. Take number as parameter.
 public class pq10 {
     public static void main(String[] args) {
-     isPalindrome(12121);
+        isPalindrome(12121);
+        isPalindrome(90979865);
+        isPalindrome(167821);
     }
 
     static void isPalindrome(int a) {
@@ -14,9 +16,9 @@ public class pq10 {
             a = a / 10;
         }
         if (ans == check) {
-            System.out.println("is a palindrome");
+            System.out.println(ans + " is a palindrome");
         } else {
-            System.out.println("not a palindrome.");
+            System.out.println(ans + " not a palindrome.");
         }
     }
 }

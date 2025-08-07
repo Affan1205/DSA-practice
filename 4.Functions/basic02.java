@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class basic2 {
+public class basic02 {
 
     public static void main(String[] args) {
         // Example 2 - return the sum value

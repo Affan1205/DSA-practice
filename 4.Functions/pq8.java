@@ -4,37 +4,38 @@
 import java.util.Scanner;
 
 public class pq8 {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Enter total subject: ");
-        int n = in.nextInt();
-        System.out.println("Enter number marks obtained: ");
-        int marksObtained = 0;
-        int totalmarks = 500;
-        for (int i = 0; i < n; i++) {
-            int maks = in.nextInt();
-            marksObtained = marksObtained + maks;
 
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter total subjects : ");
+        int subjects = input.nextInt();
+        System.out.print("Total marks of exam: ");
+        int totalMarks = input.nextInt();
+        int markObtained = 0;
+        System.out.println("Enter the marks : ");
+        for (int i = 0; i < subjects; i++) {
+            int marks = input.nextInt();
+            markObtained = markObtained + marks;
         }
-        double percentage = (marksObtained * 100) / totalmarks;
-        System.out.println(percentage);
-        grade(percentage);
-        in.close();
+        System.out.println("Marks obtained: " + markObtained);
+        input.close();
+        double percentage = (markObtained * 100) / totalMarks;
+        System.out.println("Percentage obtained: " + percentage);
+
+        gradeObtained(percentage);
     }
 
-    static void grade(double a){
-        if (a > 90) {
+    static void gradeObtained(double percent) {
+        if (percent > 90) {
             System.out.println("A");
-        } else if (a > 80) {
+        } else if (percent > 75) {
             System.out.println("B");
-        } else if (a > 70) {
+        } else if (percent > 60) {
             System.out.println("C");
-        } else if (a > 60) {
+        } else if (percent > 40) {
             System.out.println("D");
-        } else if (a > 50) {
-            System.out.println("E");
         } else {
-            System.out.println("F");
+            System.out.println("Fail!!!!!");
         }
     }
 }

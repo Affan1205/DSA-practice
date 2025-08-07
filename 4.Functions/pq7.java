@@ -1,18 +1,35 @@
+//Define a method to find out if a number is prime or not.
+
+import java.util.Scanner;
+
 public class pq7 {
-    public static boolean isPrime(int n) {
-        if (n <= 1) return false;
-        for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0) return false;
-        }
-        return true;
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter number : ");
+        int num = in.nextInt();
+        isPrime(num);
+        in.close();
     }
 
-    public static void main(String[] args) {
-        int num = 29; // You can change this value to test other numbers
-        if (isPrime(num)) {
-            System.out.println(num + " is a prime number.");
+    static void isPrime(int n) {
+        boolean isBoolean = true;
+        if (n == 1) {
+            System.out.println("Neither Prime nor composite.");
+
+        }
+        for (int i = 2; i < n; i++) {
+            if (n % i == 0) {
+                isBoolean = false;
+                break;
+
+            }
+        }
+        if (isBoolean) {
+            System.out.println(n + " Prime Number.");
         } else {
-            System.out.println(num + " is not a prime number.");
+            System.out.println(n + " Not a Prime Number.");
         }
     }
 }
+
+
