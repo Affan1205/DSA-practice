@@ -16,8 +16,9 @@ public class basic02 {
         System.out.println("Enter the 2 number");
         int num2 = input.nextInt();
         int sum = num1 + num2;
+        input.close();
         return sum;
-        
+    
     }
   
 }

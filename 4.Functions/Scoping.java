@@ -9,6 +9,7 @@ public class Scoping {
             System.out.println(blockVar); // accessible here
         }
         // blockVar NOT accessible here (outside its block)
+        System.out.println(globalVar);
         // localVar, param, and globalVar still accessible here
     }
     // localVar, blockVar, and param NOT accessible here

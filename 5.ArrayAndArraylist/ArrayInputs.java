@@ -44,6 +44,7 @@ public class ArrayInputs {
         str[2] = "cse";
         System.out.println(Arrays.toString(str));
 
+        in.close();
     }
 
 }

@@ -8,6 +8,7 @@ public class pq014 {
         int num = input.nextInt();
         int sum = add(num);
         System.out.println("The sum of first " + num + " natural numbers is : " + sum);
+        input.close();
     }
 
     static int add(int n) {
