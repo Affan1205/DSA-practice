@@ -13,8 +13,8 @@ public class PremitiveDatatypes {
         // int roll_no = input.nextInt();
         // System.out.println("My Rollno is :" + roll_no);
 
-        // Declaring STRING(NOT PRIMITIVE) datatype
-        // String name = "ajhfju;;kl";
+        // Declaring STRING(NON PRIMITIVE) datatype
+        // String name = "ajhfjukl";
         // System.out.println(name);
 
         // --->STRING INPUT PROGRAM

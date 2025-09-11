@@ -12,26 +12,51 @@ public class jbpq9 {
 
         for (int i = num1; i < num2; i++) {
             int temp = i;
-            int count = 0;
-            // count Digit
             int t = temp;
-            while (t > 0) {
-                t = t / 10;
+            int count = 0;
+            //counting digit
+            while (t>0) {
+                t = t/10;
                 count++;
             }
-
-            // calculating armstrong number
+            //calculating armstrong
             t = temp;
-            int ans = 0;
-            while (t > 0) {
-                int digit = t % 10;
-                ans = ans + (int) Math.pow(digit, count);
-                t = t / 10;
-
+            int ans =0;
+            while (t>0) {
+                int digit = t%10;
+                ans = ans +(int) Math.pow(digit, count);
+                t = t/10;
             }
-            //checking armstrong
-            if (ans == i)
+            // checking armstrong
+            if (ans == i) {
                 System.out.print(i + " ");
+            }
+
         }
+
+        // for (int i = num1; i < num2; i++) {
+        // int temp = i;
+        // int count = 0;
+        // // count Digit
+        // int t = temp;
+        // while (t > 0) {
+        // t = t / 10;
+        // count++;
+        // }
+        // // calculating armstrong number
+        // t = temp;
+        // int ans = 0;
+        // while (t > 0) {
+        // int digit = t % 10;
+        // ans = ans + (int) Math.pow(digit, count);
+        // t = t / 10;
+
+        // }
+        // // checking armstrong
+        // if (ans == i)
+        // System.out.print(i + " ");
+
+        // }
+        input.close();
     }
 }

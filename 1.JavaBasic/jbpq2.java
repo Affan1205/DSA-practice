@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class jbpq2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter your name : ");
-        String name = input.next();
-        System.out.print("We are excited to say " + name + " you have crack Rubrik. ");
+        System.out.println("enter your full name.");
+        String name = input.nextLine();
+        System.out.println("My name is " + name);
         input.close();
     }
+
 }

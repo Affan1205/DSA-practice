@@ -5,16 +5,15 @@ import java.util.Scanner;
 public class jbpq3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter Input: ");
-        int principalAmount = input.nextInt();
-        float time = input.nextFloat();
-        float rate = input.nextFloat();
-        double simpleIntrest = (principalAmount * time * rate) / 100;
-        System.out.print("Simple Intrest = " + simpleIntrest);
+        System.out.println("enter the principal amount , time , rate of interst: ");
+        double principal = input.nextDouble();
+        double time = input.nextDouble();
+        double rate = input.nextDouble();
+        double simpleInterst = (principal * time * rate) / 100;
+        System.out.println("simple interset = " + simpleInterst);
 
-
-        
         input.close();
+
 
     }
 }
